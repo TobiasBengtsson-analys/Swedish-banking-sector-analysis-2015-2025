@@ -64,14 +64,14 @@ All figures are included in the final report and stored in `/figures`.
 ---
 
 ## Repository Structure
-
-
-/data Raw SCB dataset and processed data
-/figures Generated plots used in the report
-/report LaTeX source and compiled PDF
-/src Python scripts for data processing and analysis
+```
+/data      Raw SCB dataset and processed data
+/figures   Generated plots used in the report
+/report    LaTeX source and compiled PDF
+/src       Python scripts for data processing and analysis
 
 README.md
+```
 
 ---
 
