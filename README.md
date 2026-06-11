@@ -72,9 +72,12 @@ Install dependencies:
 
 ```Bash
 pip install -r requirements.txt
+```
+
 Execute the scripts in order:
 
-Bash
+ 
+```Bash
 python src/data_cleaning.py
 python src/analysis.py
 python src/plotting.py
@@ -82,14 +85,12 @@ python src/plotting.py
 
 ## Limitations
 
-The analysis is strictly descriptive and does not imply causal macro-econometric relationships.
+- The analysis is strictly descriptive and does not imply causal macro-econometric relationships.
+- Ratios are simplified aggregations of complex consolidated bank balance sheets.
+- SCB's broad definition of In-/upplåning combines domestic household deposits with corporate and financial counterparty liabilities, which prevents a isolated breakdown of pure retail deposit sticky-floats.
 
-Ratios are simplified aggregations of complex consolidated bank balance sheets.
+## Repository Structure
 
-SCB's broad definition of In-/upplåning combines domestic household deposits with corporate and financial counterparty liabilities, which prevents a isolated breakdown of pure retail deposit sticky-floats.
-
-Repository Structure
-Plaintext
 ├── data/              # Raw SCB input and intermediate processed .csv files
 ├── figures/           # Output directory for generated high-resolution plots
 ├── report/            # LaTeX source code and the compiled formal PDF report
