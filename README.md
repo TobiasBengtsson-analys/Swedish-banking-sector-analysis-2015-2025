@@ -85,12 +85,14 @@ python src/plotting.py
 
 ## Limitations
 
+
 - The analysis is strictly descriptive and does not imply causal macro-econometric relationships.
 - Ratios are simplified aggregations of complex consolidated bank balance sheets.
 - SCB's broad definition of In-/upplåning combines domestic household deposits with corporate and financial counterparty liabilities, which prevents a isolated breakdown of pure retail deposit sticky-floats.
 
 ## Repository Structure
 
+```text
 ├── data/              # Raw SCB input and intermediate processed .csv files
 ├── figures/           # Output directory for generated high-resolution plots
 ├── report/            # LaTeX source code and the compiled formal PDF report
@@ -100,6 +102,7 @@ python src/plotting.py
 │   └── plotting.py
 ├── requirements.txt   # Pinpointed python dependencies for reproducibility
 └── README.md          # Project summary and documentation
+```
 
 ## Tools Used
 
