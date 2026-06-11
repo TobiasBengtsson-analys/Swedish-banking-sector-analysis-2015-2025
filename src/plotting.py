@@ -39,11 +39,11 @@ def main():
     ax.set_ylim(0, 4000)
     ax.set_xlim(pd.Timestamp('2015-01-01'), pd.Timestamp('2025-12-01'))
 
-    plt.title("Svenska storbankers totala tillgångar", fontweight='bold', pad=15)
-    plt.ylabel("Miljarder SEK", fontweight='bold')
-    plt.xlabel("Tid", fontweight='bold')
-    plt.xticks(rotation=45, fontweight='bold')
-    plt.yticks(fontweight='bold')
+    plt.title("Svenska storbankers totala tillgångar", pad=15)
+    plt.ylabel("Miljarder SEK")
+    plt.xlabel("Tid")
+    plt.xticks(rotation=45,)
+    plt.yticks()
 
     ax.legend(title=" ", loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
     plt.tight_layout()
@@ -64,11 +64,11 @@ def main():
     ax.set_ylim(0, 3000)
     ax.set_xlim(pd.Timestamp('2015-01-01'), pd.Timestamp('2025-12-01'))
 
-    plt.title("Svenska storbankers totala utlåning", fontweight='bold', pad=15)
-    plt.ylabel("Miljarder SEK", fontweight='bold')
-    plt.xlabel("Tid", fontweight='bold')
-    plt.xticks(rotation=45, fontweight='bold')
-    plt.yticks(fontweight='bold')
+    plt.title("Svenska storbankers totala utlåning", pad=15)
+    plt.ylabel("Miljarder SEK")
+    plt.xlabel("Tid")
+    plt.xticks(rotation=45)
+    plt.yticks()
 
     ax.legend(title=" ", loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
     plt.tight_layout()
@@ -104,11 +104,11 @@ def main():
     ax.set_xlim(pd.Timestamp('2015-01-01'), pd.Timestamp('2025-12-01'))
     ax.set_ylim(0, 2500)
 
-    plt.title("Svenska storbankers finansiering över tid", fontweight='bold', pad=15)
-    plt.ylabel("Miljarder SEK", fontweight='bold')
-    plt.xlabel("År", fontweight='bold')
-    plt.xticks(rotation=45, fontweight='bold')
-    plt.yticks(fontweight='bold')
+    plt.title("Svenska storbankers finansiering över tid", pad=15)
+    plt.ylabel("Miljarder SEK")
+    plt.xlabel("År")
+    plt.xticks(rotation=45)
+    plt.yticks()
 
     # Filtrera bort de automatiska rubrikerna "institut" och "kontopost" från legenden
     handles, labels = ax.get_legend_handles_labels()
@@ -135,13 +135,13 @@ def main():
     fin_andel["Andel emitterade värdepapper"] = (df_pivot["Marknadsfinansiering"] / total_fin) * 100
 
     ax = fin_andel.plot(kind="bar", stacked=True, figsize=(6, 5), color=["tab:blue", "tab:orange"])
-    ax.set_title("Storbankers finansieringsstruktur\nper december 2025", fontweight='bold', pad=10)
-    ax.set_ylabel("Procent", fontweight='bold')
+    ax.set_title("Storbankers finansieringsstruktur\nper december 2025", pad=10)
+    ax.set_ylabel("Procent")
     ax.set_xlabel(" ")
-    ax.set_xticklabels(fin_andel.index, rotation=0, fontweight='bold')
+    ax.set_xticklabels(fin_andel.index, rotation=0)
     ax.set_ylim(0, 100)
     ax.set_yticks(range(0, 101, 10))
-    ax.set_yticklabels(range(0, 101, 10), fontweight='bold')
+    ax.set_yticklabels(range(0, 101, 10))
     ax.legend(title=" ", loc='upper center', bbox_to_anchor=(0.5, -0.12), ncol=2, frameon=False)
 
     plt.tight_layout()
@@ -154,13 +154,13 @@ def main():
     df_pivot["LTA"] = (df_pivot["103 Utlåning, Totalt"] / df_pivot["120 Summa tillgångar"]) * 100
 
     bp = df_pivot[["LTA"]].plot(kind="bar", figsize=(6, 5), color=[ratio_color], legend=False)
-    bp.set_title("Utlånings-/tillgångskvot\nper december 2025", fontweight='bold', pad=10)
-    bp.set_ylabel("Procent", fontweight='bold')
+    bp.set_title("Utlånings-/tillgångskvot\nper december 2025", pad=10)
+    bp.set_ylabel("Procent")
     bp.set_xlabel(" ")
-    bp.set_xticklabels(df_pivot.index, rotation=0, fontweight='bold')
+    bp.set_xticklabels(df_pivot.index, rotation=0)
     bp.set_ylim(0, 100)
     bp.set_yticks(range(0, 101, 10))
-    bp.set_yticklabels(range(0, 101, 10), fontweight='bold')
+    bp.set_yticklabels(range(0, 101, 10))
 
     plt.tight_layout()
     plt.savefig('figures/LTA.png', dpi=300, facecolor="white")
@@ -176,13 +176,13 @@ def main():
     df_pivot_ordered = df_pivot.loc[order]
 
     ax = df_pivot_ordered[["LTD"]].plot(kind="bar", color=[ratio_color], figsize=(6, 5), legend=False)
-    ax.set_title("Utlånings-/inlåningskvot (System-LTD)\nper december 2025", fontweight='bold', pad=10)
-    ax.set_ylabel("Procent", fontweight='bold')
+    ax.set_title("Utlånings-/inlåningskvot\nper december 2025", pad=10)
+    ax.set_ylabel("Procent")
     ax.set_xlabel(" ")
-    ax.set_xticklabels(df_pivot_ordered.index, rotation=0, fontweight='bold')
+    ax.set_xticklabels(df_pivot_ordered.index, rotation=0)
     ax.set_ylim(0, 150)
     ax.set_yticks(range(0, 151, 10))
-    ax.set_yticklabels(range(0, 151, 10), fontweight='bold')
+    ax.set_yticklabels(range(0, 151, 10))
 
     plt.tight_layout()
     plt.savefig('figures/LTD.png', dpi=300, facecolor="white")
