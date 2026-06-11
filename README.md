@@ -1,4 +1,4 @@
-# Swedish Bank Balance Sheet Analysis (2015–2025)
+# Swedish Banking Secotr Analysis (2015–2025)
 
 ## Overview
 This project provides a descriptive analysis of the balance sheets of the three major Swedish banks: SEB, Swedbank, and Handelsbanken over the period 2015–2025.
