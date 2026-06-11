@@ -64,8 +64,8 @@ The remaining gap is systematically bridged via international and domestic capit
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/your-username/swedish-banking-sector-analysis.git](https://github.com/your-username/swedish-banking-sector-analysis.git)
-   cd swedish-banking-sector-analysis
+   git clone [[https://github.com/your-username/swedish-banking-sector-analysis.git](https://github.com/your-username/swedish-banking-sector-analysis.git)
+   cd swedish-banking-sector-analysis](https://github.com/TobiasBengtsson-analys/Swedish-banking-sector-analysis-2015-2025.git)
    ```
 
 Install dependencies:
