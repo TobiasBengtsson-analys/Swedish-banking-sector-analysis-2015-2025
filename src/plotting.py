@@ -12,7 +12,7 @@ def main():
 
     # 2. Läs in den städade datan
     try:
-        df = pd.read_csv("C:/Users/Public/Bankanalys FI/Data_processed.csv")
+        df = pd.read_csv("data/Data_processed.csv")
     except FileNotFoundError:
         print("Fel: Hittade inte data/Data_processed.csv. Kör data_cleaning.py först.")
         return
