@@ -1,4 +1,4 @@
-# Swedish Banking Secotr Analysis (2015–2025)
+# Structural Analysis of Swedish Bank Balance Sheets (2015–2025)
 
 ## Overview
 This project provides a descriptive analysis of the balance sheets of the three major Swedish banks: SEB, Swedbank, and Handelsbanken over the period 2015–2025.
@@ -65,12 +65,10 @@ All figures are included in the final report and stored in `/figures`.
 
 ## Repository Structure
 ```
-/data      Raw SCB dataset and processed data
-/figures   Generated plots used in the report
-/report    LaTeX source and compiled PDF
-/src       Python scripts for data processing and analysis
-
-README.md
+data/ Raw SCB dataset and processed data
+figures/ Generated plots used in the report
+report/ LaTeX source and compiled PDF
+src/ Python scripts for data processing and analysis
 ```
 
 ---
