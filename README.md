@@ -30,7 +30,9 @@ The analytical pipeline is built using a clean separation of concerns in Python:
 * **Asset & Lending CAGR**: Dissecting growth speeds before and after the 2022 macroeconomic regime shift.
 * **Funding Decomposition**: Evaluating the ratio between deposits/general funding and capital market financing.
 * **Loan-to-Asset (LTA) Ratio**: Determining credit risk concentration within total assets.
-* **System Loan-to-Deposit (LTD) Ratio**: Defined as $LTD = \frac{\text{Total Lending}}{\text{Deposits \& General Funding}}$. *Note: In line with SCB MFI definitions, the denominator includes interbank and institutional funding, serving as a broad measure of structural market dependency rather than pure retail deposits.*
+* **System Loan-to-Deposit (LTD) Ratio**: Defined as Total Lending and Deposits \ General Funding.
+
+* *Note: In line with SCB MFI definitions, the denominator includes interbank and institutional funding, serving as a broad measure of structural market dependency rather than pure retail deposits.*
 
 ---
 
